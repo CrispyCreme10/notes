@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <script type="module" src="/src/main.ts" defer></script>
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        display:flex;
+        height: 100%;
+      }
+
+      #sidebar {
+        width: 220px;
+        background-color: #383838;
+      }
+
+      #note {
+        flex-grow: 2;
+        background-color: rgb(73, 73, 73);
+        padding: 5px;
+        caret-color: white;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="sidebar">
+        
+      </div>
+      <textarea id="note"></textarea>
+    </div>
+  </body>
+</html>
