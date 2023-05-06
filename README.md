@@ -6,11 +6,17 @@ This template should help get you started developing with Tauri in vanilla HTML,
 
 - [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
 
-## Tools you need + Setup
+## Tools
 
-Node.js
-pnpm: npm i -g pnpm
-tauri-cli: cargo install tauri-cli
+- Node.js
+- Rust + Cargo
+- pnpm
+
+## Tools Setup
+
+- npm i -g pnpm
+- pnpm i
+- cargo install tauri-cli
 
 ## Run app
 cargo tauri dev
