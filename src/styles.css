@@ -1,19 +1,46 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
 
-  color: #0f0f0f;
-  background-color: #f6f6f6;
+    color: #0f0f0f;
+    background-color: #f6f6f6;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* SCROLL BAR */
+body::-webkit-scrollbar, .scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track, .scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb, .scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+/* UTILITIES */
+.text-white {
+    color: white;
+}
+
+.outline-none {
+    outline: none;
 }
 
 .super-h1 {
-  font-size: 2em;
+    font-size: 2em;
 }

@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notes</title>
-    <script type="module" src="/src/main.ts" defer></script>
-    <style>
-      html, body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/src/styles.css" />
+        <link rel="stylesheet" href="/src/styles/sidebar.css" />
+        <link rel="stylesheet" href="/src/styles/note.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes</title>
+        <script type="module" src="/src/main.ts" defer></script>
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
 
-      #container {
-        display:flex;
-        height: 100%;
-      }
+            #page {
+                display: flex;
+                height: 100%;
+            }
+        </style>
+    </head>
 
-      #sidebar {
-        width: 50px;
-        background-color: #383838;
-      }
-
-      #note {
-        flex-grow: 2;
-        background-color: rgb(73, 73, 73);
-        padding: 5px;
-        caret-color: white;
-        color: white;
-        border: none;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="container">
-      <div id="sidebar">
-        
-      </div>
-      <div id="note" contenteditable="true">
-      </div>
-    </div>
-  </body>
+    <body>
+        <div id="page">
+            <div id="sidebar"></div>
+            <div id="note-editor">
+                <div id="title-bar">
+                    <span class="text-white">Untitled</span>
+                </div>
+                <div id="content">
+                    <div id="title" class="super-h1 text-white outline-none" contenteditable>Untitled</div>
+                    <div id="note" class="text-white outline-none"></div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
 </html>
